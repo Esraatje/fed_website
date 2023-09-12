@@ -59,6 +59,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
+  - Op groot scherm zijn de lettergroottes in het menu nog wel te lezen, maar op klein scherm is het amper te lezen;
+  - Er is weinig variatie om te kunnen navigeren. Ik merk bijvoorbeeld dat je bij de VoiceOver niet kunt navigeren met tab/pijl toetsen;
+  - Sommige subteksten zijn in het grijs, maar dat is niet altijd even handig omdat het niet voor iedereen leesbaar is;
+  - De VoiceOver leest bij het menu bij ieder subcategorie "main-menu" en dan het subkopje dat er bij hoort. Heel vervelend als je naar de laatste link moet en alles dus dubbel hoort aan het begin.
 
 </details>
 
