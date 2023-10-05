@@ -74,7 +74,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/breakdownschets.pdf" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/breakdownschets.jpg" width="375px" alt="breakdown van de hele pagina">
 
   ### dynamisch deel (bijv menu): 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
@@ -100,20 +100,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1 Sarah| student 2 Liam     | student 3 Magdalena  | student 4 Jornt  |
-  | ---            | ---                | ---                  | ---              |
-  | dit bespreken  | en dit             | en ik dit            | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt         | dit wil ik zeker |
-  | ...            | ...                | ...                  | ...              |
-
-
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - We hebben correcte html even opnieuw doorgenomen
+  - Ik heb het downloaden van fonts goed genoteerd, dit moet lukken
+  - Ik moet nog even mijn html afschrijven
 
 </details>
 
@@ -127,22 +119,36 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 2<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Ik heb mijn html er in gezet en ik heb alvast een begin gemaakt aan mijn css. Ik loop alleen tegen een paar dingen aan, maar ik hoop die op te kunnen lossen door het te bespreken met een klasgenoot of door het te vragen aan een van de student-assistenten.
+  - Het installeren van de fonts ging in een keer goed! Ik had het nog goed onthouden van de lessen.
+  - Ik ben momenteel bezig met de hamburger menu en de carrousels. Als ik dit eenmaal door heb, kan ik voortgang maken.
 
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
   Esra
-  - Hoe kan ik afbeeldingen klikbaar maken
-  - Font installeren vanuit website
+  - Ik struggle op dit moment met mijn iconen rechts krijgen in het menu. Ik wil dat het logo rechts blijft, en mijn logo links.
+  - Mijn afbeelding in de eerste section is heel condensed terwijl ik wel de juiste afmetingen en afbeelding heb gebruikt.
 
-  | Sarah          | Liam               | Magdalena    | Jornt            |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+ Student 1 Sarah
+  - Header images overhoop gehaald hoe fix ik het weer
+  - Hoe maak ik een button van een img en een woord samen
 
+-Hoe spreek ik alleen het logo aan, laatste img van de header in de 2e nav
+
+  Student 2 Jornt
+  - Ik wil graag weten hoezo mijn 2e section niet het scherm volledig vult.
+  - waarom kan ik de 'font-weight' van m'n nav niet aanpassen? 
+  - Bepaalde afbeelding laadt niet bij testen telefoon, hoe komt dat?
+
+  Student 3 Liam
+  - Afbeeldingen carousel met animiatie
+  - Nth of type voor de kleur van tekst lukt niet
+  - Hoe kun je het beste de iconen in de navbar doen
+
+  Student 4 Karenza
+  - @fontface snap ik even niet, verschil tussen flex en grid (wanneer is wat beter)
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
