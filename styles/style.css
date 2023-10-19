@@ -16,20 +16,24 @@
 :root {
 	/* startje */
 	--color-text:#111;
-	--color-background:#eee;
+	--color-text-white:#eee;
+	--color-background-white:#eee;
+	--color-background-black:#111;
+	--color-background-grey:#f5f5f5;
+
 }
 
 
 @font-face {
 	font-family: Nike Futura;
 	src: url(https://www.nike.com/static/ncss/4.2/dotcom/fonts/Nike-Futura.woff2);
-	format('woff2');
+	format: ('woff2');
 }
 
 @font-face {
 	font-family: Helvetica;
 	src: url(https://www.nike.com/static/ncss/4.2/dotcom/fonts/HelveticaNowDisplayMedium.woff2);
-	format('woff2');
+	format: ('woff2');
 }
 
 /****************/
@@ -37,19 +41,73 @@
 /****************/
 
 /* jouw code */
-/* HEADER */
-header nav lu:first-of-type {
+/* HEADER*/
+header nav:first-of-type {
+	display: flex;
+	justify-content: space-between;
+}
+header nav:first-of-type ul:first-of-type {
 	display: flex;
 	justify-content: flex-start;
 	gap: 1.5em;
 	list-style: none;
 }
 
+/* HAMBURGER MENU */
+header nav:nth-of-type(2) {
+	position: relative;
+	height: 20em;
+}
+
+header nav:nth-of-type(2) ul:first-of-type{
+	position: absolute;
+	top: 0;
+	right: 0;
+	background-color: white;
+	list-style-type: none;
+	font-family: Helvetica;
+}
+
+header nav:nth-of-type(2) ul:nth-of-type(2){
+	position: absolute;
+	right: 0;
+	bottom:0;
+	background-color: var(--color-background-white);
+	list-style-type: none;
+	font-family: Helvetica;
+	display: flex;
+	
+}
+
+header nav:nth-of-type(2) ul:first-of-type button {
+	display: flex;
+	justify-content: flex-end;
+}
+
+
+
 /* SECTION 1 */
 main section:first-of-type {
 	text-align: center;
 	font-family: Helvetica;
-	background-color: #f5f5f5;
+	background-color: var(--color-background-grey);
+}
+
+main section:first-of-type ul:first-of-type {
+	list-style-type: none;
+	display: flex;
+	overflow-x: auto;
+	gap: 1em;
+	scroll-snap-type: x mandatory;
+	overscroll-behavior-x: contain;
+}
+
+main section:first-of-type ul:first-of-type li {
+	flex-shrink: 0;
+	flex-basis: 80%;
+	display: flex;
+	flex-direction: column;
+	scroll-snap-align: center;
 }
 
 main section:first-of-type h2{
@@ -62,11 +120,11 @@ main section:first-of-type a{
 	color: var(--color-text);
 }
 
-
 /* SECTION 2 */
 main section:nth-of-type(2) img {
 	width: 26em;
 	height: 35em;
+	object-fit: none;
 }
 
 main section:nth-of-type(2) h1 {
@@ -85,9 +143,61 @@ main section:nth-of-type(2) button {
 	font-family: Helvetica;
 	font-size: 1em;
 	background-color: #111;
-	color: #fff;
+	color: var(--color-text-white);
 	border-radius: 2em;
 	padding: .5em 1em .5em 1em;
 	display: flex;
-	align-items: center;
+	margin: auto;
 }
+
+/* Caroussel 1 */
+main section:nth-of-type(3) ul:first-of-type {
+	list-style-type: none;
+	display: flex;
+	overflow-x: auto;
+	gap: 1em;
+	scroll-snap-type: x mandatory;
+	overscroll-behavior-x: contain;
+}
+
+main section:nth-of-type(3) ul:first-of-type li {
+	flex-shrink: 0;
+	flex-basis: 100%;
+	display: flex;
+	flex-direction: column;
+	scroll-snap-align: center;
+}
+
+main section:nth-of-type(3) ul:first-of-type p {
+	font-family: Helvetica;
+	font-weight: 500;
+	font-size: 1.5em;
+	padding-left: 1em;
+}
+
+/* Caroussel 2 */
+main section:nth-of-type(4) h2 {
+	font-size: 2em;
+	font-family: helvetica;
+	padding-left: 1em;
+}
+
+main section:nth-of-type(4) ul:first-of-type {
+	list-style-type: none;
+	display: flex;
+	overflow-x: auto;
+	gap: 1em;
+	scroll-snap-type: x mandatory;
+	overscroll-behavior-x: contain;
+}
+
+main section:nth-of-type(4) ul:first-of-type li {
+	flex-shrink: 0;
+	flex-basis: 100%;
+	display: flex;
+	flex-direction: column;
+	scroll-snap-align: center;
+}
+
+/* ONTDEK MEER */
+

@@ -184,18 +184,34 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 3<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Het lukte mij om carrousels te maken en om voortgang te maken met mijn website.
+  De dingen waar ik tegen aan liep:
+  - Hoe zorg ik ervoor dat de tekst in een section automatisch veranderd?
+  - Hoe roep ik de eerste p in een section aan?
+  - Hoe krijg ik de Jordan en Converse in mijn nav onder elkaar?
 
 
   ### Agenda voor meeting
-  samen met je groepje opstellen
+Jornt:
+- Waarom blijft niet mijn gehele NAV bar plakken?
+- Hoe krijg ik m’n tekst in dit sectie 4 responsive?
+- Er zijn maar 3 fonts beschikbaar om te downloaden, lukt niet om font-weight mee te geven.
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+Karenza:
+- Ik heb ook vraag over responsive text / footer
+- En een vraag over “overlappen” van fotos/backgrounds
+- Vraag over alt attributen en hoe specifiek de uitleg van de foto moet zijn.
+- En eigenlijk gwn meer uitleg over responsiveness
 
+Sarah:
+- Ik kan de fonts niet vinden omdat ze geen duidelijke namen hebben
+- Hoe maak ik een rondje boven het winkelmandje
+- Hoe krijg ik een link en een p die onder elkaar staan, dichter op elkaar
+
+Liam:
+- Hoe krijg ik 3 verschillende menu opties
+- Hoe maak ik slideshow met animaties
+- Hoe zorg ik ervoor dat ik verschillende menus kan sluiten met 1 knop
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
