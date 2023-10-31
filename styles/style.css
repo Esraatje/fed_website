@@ -16,11 +16,10 @@
 :root {
 	/* startje */
 	--color-text:#111;
-	--color-text-white:#eee;
-	--color-background-white:#eee;
+	--color-text-white:#fff;
+	--color-background-white:#fff;
 	--color-background-black:#111;
 	--color-background-grey:#f5f5f5;
-
 }
 
 
@@ -53,17 +52,38 @@ header nav:first-of-type ul:first-of-type {
 	list-style: none;
 }
 
-/* HAMBURGER MENU */
-header nav:nth-of-type(2) {
+/* HAMBURGER MENU met hulp van donna*/
+header nav:nth-of-type(2){
+	transform: translateX(20em);
+	position: fixed;
+	top:0;
+	right: 0;
+	height: 100vh;
+	width: 320px;
+}
+
+header nav:nth-of-type(2) ul{
 	position: relative;
-	height: 20em;
+	height: 30em;
+	width: 50%;
+	background-color: var(--color-background-white);
+}
+
+
+header nav:nth-of-type(2).zichtbaar{
+	transform: translateX(0);
+}
+
+main.wazig {
+    overflow-y: hidden;
+	filter: blur(0.3em) brightness(78%);
 }
 
 header nav:nth-of-type(2) ul:first-of-type{
 	position: absolute;
 	top: 0;
 	right: 0;
-	background-color: white;
+	background-color: var(--color-background-white);
 	list-style-type: none;
 	font-family: Helvetica;
 }
@@ -76,70 +96,84 @@ header nav:nth-of-type(2) ul:nth-of-type(2){
 	list-style-type: none;
 	font-family: Helvetica;
 	display: flex;
-	
 }
 
-header nav:nth-of-type(2) ul:first-of-type button {
-	display: flex;
-	justify-content: flex-end;
+header nav:nth-of-type(2) ul{
+	background-color: var(--color-background-white);
+	background-color: red;
+
 }
 
-
+header nav:nth-of-type(2) button {
+	margin: auto;
+	right: 100;
+	outline: inherit;
+}
 
 /* SECTION 1 */
-main section:first-of-type {
-	text-align: center;
-	font-family: Helvetica;
+section:first-of-type ul{
+	position:relative;
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+
+section:first-of-type ul li{
+	--items: 3;
+	width:100%;
 	background-color: var(--color-background-grey);
+	padding:1em;
+	text-align:center;
+	
+	animation-name:caro;
+	animation-duration:3s;
+	animation-iteration-count:infinite;
+	animation-timing-function:linear;
 }
 
-main section:first-of-type ul:first-of-type {
-	list-style-type: none;
-	display: flex;
-	overflow-x: auto;
-	gap: 1em;
-	scroll-snap-type: x mandatory;
-	overscroll-behavior-x: contain;
+/* de tweede en derde li */
+section:first-of-type li:nth-of-type(n + 2) {
+	position:absolute;
+	top:0;
 }
 
-main section:first-of-type ul:first-of-type li {
-	flex-shrink: 0;
-	flex-basis: 80%;
-	display: flex;
-	flex-direction: column;
-	scroll-snap-align: center;
+@keyframes caro {
+	0%, 33.3% {
+		opacity:1;
+	}
+	33.31%, 100% {
+		opacity:0;
+	}
 }
 
-main section:first-of-type h2{
-	font-size: 1em;
-	color: var(--color-text);
-}
+section:first-of-type li:nth-of-type(2) {
+	animation-delay:-2s;
+} 
 
-main section:first-of-type a{
-	text-align: center;
-	color: var(--color-text);
-}
+section:first-of-type li:nth-of-type(3) {
+	animation-delay:-1s;
+} 
 
 /* SECTION 2 */
-main section:nth-of-type(2) img {
+section:nth-of-type(2) img {
 	width: 26em;
 	height: 35em;
 	object-fit: none;
 }
 
-main section:nth-of-type(2) h1 {
+section:nth-of-type(2) h1 {
 	font-family: Nike Futura;
 	text-transform: uppercase;
 	text-align: center;
 	font-size: 3em;
 }
 
-main section:nth-of-type(2) p {
+section:nth-of-type(2) p {
 	font-family: Helvetica;
 	text-align: center;
 }
 
-main section:nth-of-type(2) button {
+section:nth-of-type(2) button {
 	font-family: Helvetica;
 	font-size: 1em;
 	background-color: #111;
@@ -151,7 +185,7 @@ main section:nth-of-type(2) button {
 }
 
 /* Caroussel 1 */
-main section:nth-of-type(3) ul:first-of-type {
+section:nth-of-type(3) ul:first-of-type {
 	list-style-type: none;
 	display: flex;
 	overflow-x: auto;
@@ -160,7 +194,7 @@ main section:nth-of-type(3) ul:first-of-type {
 	overscroll-behavior-x: contain;
 }
 
-main section:nth-of-type(3) ul:first-of-type li {
+section:nth-of-type(3) ul:first-of-type li {
 	flex-shrink: 0;
 	flex-basis: 100%;
 	display: flex;
@@ -168,21 +202,21 @@ main section:nth-of-type(3) ul:first-of-type li {
 	scroll-snap-align: center;
 }
 
-main section:nth-of-type(3) ul:first-of-type p {
-	font-family: Helvetica;
+section:nth-of-type(3) ul:first-of-type p {
+	font-family: Helvetica, sans-serif;
 	font-weight: 500;
 	font-size: 1.5em;
 	padding-left: 1em;
 }
 
 /* Caroussel 2 */
-main section:nth-of-type(4) h2 {
+section:nth-of-type(4) h2 {
 	font-size: 2em;
-	font-family: helvetica;
+	font-family: helvetica, sans-serif;
 	padding-left: 1em;
 }
 
-main section:nth-of-type(4) ul:first-of-type {
+section:nth-of-type(4) ul:first-of-type {
 	list-style-type: none;
 	display: flex;
 	overflow-x: auto;
@@ -191,7 +225,7 @@ main section:nth-of-type(4) ul:first-of-type {
 	overscroll-behavior-x: contain;
 }
 
-main section:nth-of-type(4) ul:first-of-type li {
+section:nth-of-type(4) ul:first-of-type li {
 	flex-shrink: 0;
 	flex-basis: 100%;
 	display: flex;
@@ -200,4 +234,31 @@ main section:nth-of-type(4) ul:first-of-type li {
 }
 
 /* ONTDEK MEER */
+section:nth-of-type(5) h2{
+	font-size: 2em;
+	font-family: helvetica, sans-serif;
+	padding-left: 1em;
+}
 
+section:nth-of-type(5) img{
+	width: 18.75em;
+	height: 30em;
+	object-fit: none;
+}
+
+section:nth-of-type(5) ul{
+	list-style-type: none;
+	display: flex;
+	overflow-x: auto;
+	gap: 1em;
+	scroll-snap-type: x mandatory;
+	overscroll-behavior-x: contain;
+}
+
+section:nth-of-type(5) li{
+	flex-shrink: 0;
+	flex-basis: 100%;
+	display: flex;
+	flex-direction: column;
+	scroll-snap-align: center;
+}
