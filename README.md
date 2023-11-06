@@ -216,10 +216,7 @@ Liam:
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - Ik heb code gekregen die zeer handig is voor mijn website, en die ben ik zeker van plan om toe te passen! Ook ga ik meer hulp vragen bij de student-assistenten over mijn hamburgermenu, want dat wilt nog niet echt lukken. Ik ga natuurlijk ook zelf verder proberen te werken aan m'n website. 
 
 </details>
 
@@ -233,19 +230,28 @@ Liam:
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/uitkomst_website1.png" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/uitkomst_website2.png" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/uitkomst_website3.png" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/uitkomst_website4.png" width="375px" alt="uitomst opdracht 1">
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
+  Paar elementen in mijn website gingen in een keer goed, en dat is heel fijn als het coderen af en toe niet mee wil werken. Het maken van mijn nav bar en de caroussels verliep best wel goed af namelijk. Het hielp ook heel erg dat we het meeste in de lessen al hadden doorgenomen en geoefend.
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+  <img src="readme-images/navbar.png" width="375px" alt="top">
+  <img src="readme-images/caroussel.png" width="375px" alt="top">
 
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatjes
+  - Het is mij niet gelukt omn het hamburger menu te laten werken. Ik had Donna om hulp gevraagd daarbij en die heeft heel lief geholpen, maar zodra ik er zelf mee ging werken verdween al het inhoud. 
+  - De code die ik heb gekregen voor de eerste section werkte gelukkig wel, alleen kreeg ik de inhoud niet in de section. Het zweeft er een beetje boven lijkt wel. Ook dit heb ik geprobeerd om zelf eerst op te lossen, maar is helaas niet gelukt.
+  - Onderaan de pagina heb ik buttons die in een afbeelding moeten en de afbeeldingen ook nog een caroussel moeten. Dit is mij ook niet gelukt. Ik heb geprobeerd om met position relative en absolute te werken, maar ik denk dat ik iets fouts heb gedaan in mijn html, want het wil niet meewerken.
+  - Helaas ben ik ook nog niet toegekomen aan de surface plane en toegankelijkheid.
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+  <img src="readme-images/bummer1.png" width="375px" alt="bummer">
+  <img src="readme-images/bummer2.png" width="375px" alt="bummer">
+  <img src="readme-images/bummer3.png" width="375px" alt="bummer">
 </details>
 
 
@@ -261,8 +267,9 @@ Liam:
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. bron 1
-  2. bron 2
-  3. ...
+  1. caroussels: code van de les sanne
+  2. javascript: donna en sarah
+  3. tekst die telkens veranderd in de 1e section: sanne
+  4. fontface code van de les sanne
 
 </details>

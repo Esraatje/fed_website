@@ -17,6 +17,7 @@
 	/* startje */
 	--color-text:#111;
 	--color-text-white:#fff;
+	--color-text-grey:#707072;
 	--color-background-white:#fff;
 	--color-background-black:#111;
 	--color-background-grey:#f5f5f5;
@@ -35,6 +36,11 @@
 	format: ('woff2');
 }
 
+@font-face {
+	font-family: Nike-TG;
+	src: url(https://www.nike.com/static/ncss/4.2/dotcom/fonts/Nike-TG.woff2);
+	format: ('woff2');
+}
 /****************/
 /* JOUW STYLING */
 /****************/
@@ -50,6 +56,12 @@ header nav:first-of-type ul:first-of-type {
 	justify-content: flex-start;
 	gap: 1.5em;
 	list-style: none;
+}
+
+/* logo grootte */
+header nav:first-of-type a svg {
+	width: 3.5em;
+	height: 3.5em;
 }
 
 /* HAMBURGER MENU met hulp van donna*/
@@ -69,14 +81,13 @@ header nav:nth-of-type(2) ul{
 	background-color: var(--color-background-white);
 }
 
-
 header nav:nth-of-type(2).zichtbaar{
 	transform: translateX(0);
 }
 
 main.wazig {
     overflow-y: hidden;
-	filter: blur(0.3em) brightness(78%);
+	filter: blur(0.2em) brightness(75%);
 }
 
 header nav:nth-of-type(2) ul:first-of-type{
@@ -100,8 +111,6 @@ header nav:nth-of-type(2) ul:nth-of-type(2){
 
 header nav:nth-of-type(2) ul{
 	background-color: var(--color-background-white);
-	background-color: red;
-
 }
 
 header nav:nth-of-type(2) button {
@@ -118,12 +127,24 @@ section:first-of-type ul{
 	list-style:none;
 }
 
+section:first-of-type ul:first-of-type li p,a{
+	font-size: 1em;
+	display: inline-block;
+}
+
+section:first-of-type ul:first-of-type li h2{
+	font-size: 1.5em;
+}
+
 section:first-of-type ul li{
+	font-family: Helvetica, sans-serif;
+	font-size: 1em;
+	text-align:center;
+	background-color: var(--color-background-grey);
 	--items: 3;
 	width:100%;
-	background-color: var(--color-background-grey);
+	height: 4.6em;
 	padding:1em;
-	text-align:center;
 	
 	animation-name:caro;
 	animation-duration:3s;
@@ -209,7 +230,7 @@ section:nth-of-type(3) ul:first-of-type p {
 	padding-left: 1em;
 }
 
-/* Caroussel 2 */
+/* SECTION 4 CAROUSSEL 2 */
 section:nth-of-type(4) h2 {
 	font-size: 2em;
 	font-family: helvetica, sans-serif;
@@ -233,6 +254,31 @@ section:nth-of-type(4) ul:first-of-type li {
 	scroll-snap-align: center;
 }
 
+/* STYLING TEKST ONDER AFBEELDING CAROUSSEL 2 */
+section:nth-of-type(4) ul:first-of-type li h4 {
+	font-family: Helvetica, sans-serif;
+	font-size: 1.2em;
+	font-weight: bold;
+	margin-bottom: 0;
+}
+
+section:nth-of-type(4) ul:first-of-type li h5 {
+	color: var(--color-text-grey);
+	font-family: Helvetica, sans-serif;
+	font-size: 1em;
+	font-weight: 100;
+	margin-bottom: 0;
+	margin-top: 0;
+}
+
+section:nth-of-type(4) ul:first-of-type li h3 {
+	font-family: Helvetica, sans-serif;
+	font-size: 1em;
+	font-weight: bold;
+	margin-bottom: 1;
+	margin-top: 0;
+}
+
 /* ONTDEK MEER */
 section:nth-of-type(5) h2{
 	font-size: 2em;
@@ -240,25 +286,47 @@ section:nth-of-type(5) h2{
 	padding-left: 1em;
 }
 
-section:nth-of-type(5) img{
-	width: 18.75em;
-	height: 30em;
-	object-fit: none;
-}
-
 section:nth-of-type(5) ul{
 	list-style-type: none;
-	display: flex;
-	overflow-x: auto;
-	gap: 1em;
-	scroll-snap-type: x mandatory;
-	overscroll-behavior-x: contain;
 }
 
-section:nth-of-type(5) li{
-	flex-shrink: 0;
-	flex-basis: 100%;
-	display: flex;
-	flex-direction: column;
-	scroll-snap-align: center;
+section:nth-of-type(5) section:first-of-type img:first-of-type{
+	position: relative;
+}
+
+section:nth-of-type(5) ul:first-of-type li:first-of-type button{
+	padding: 0.5em;
+	padding-bottom: 1em;
+	padding-right: 1em;
+	
+	border: none;
+	border-radius: 1.5em;
+	background-color: var(--color-background-white);
+}
+
+section:nth-of-type(5) ul:first-of-type li:nth-of-type(2) button{
+	padding: 0.5em;
+	padding-bottom: 1em;
+	padding-right: 1em;
+	
+	border: none;
+	border-radius: 1.5em;
+	background-color: var(--color-background-white);
+}
+
+/* FOOTER */
+footer{
+	background-color: var(--color-background-black);
+}
+
+footer ul{
+	list-style-type: none;
+}
+
+footer a{
+	margin: 1em;
+	text-decoration: none;
+	color: var(--color-text-white);
+	font-family: Nike-TG, sans-serif;
+	font-size: 1em;
 }
