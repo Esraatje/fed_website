@@ -1,0 +1,390 @@
+/**************/
+/* CSS REMEDY */
+/**************/
+*, *::after, *::before {
+  box-sizing:border-box;  
+}
+
+/*********************/
+/* CUSTOM PROPERTIES */
+/*********************/
+:root {
+	/* startje */
+	--color-text:#111;
+	--color-text-white:#fff;
+	--color-text-grey:#707072;
+	--color-text-blue: #1F51FF;
+	--color-text-purple: #5D3FD3;
+	--color-background-white:#fff;
+	--color-background-black:#111;
+	--color-background-grey:#f5f5f5;
+	--color-background-darkgrey: #7e7e7e;
+}
+
+/* FONTS */
+@font-face {
+	font-family: Nike Futura;
+	src: url(https://www.nike.com/static/ncss/4.2/dotcom/fonts/Nike-Futura.woff2);
+	format: ('woff2');
+}
+
+@font-face {
+	font-family: Helvetica;
+	src: url(https://www.nike.com/static/ncss/4.2/dotcom/fonts/HelveticaNowDisplayMedium.woff2);
+	format: ('woff2');
+}
+
+@font-face {
+	font-family: Nike-TG;
+	src: url(https://www.nike.com/static/ncss/4.2/dotcom/fonts/Nike-TG.woff2);
+	format: ('woff2');
+}
+
+/****************/
+/* JOUW STYLING */
+/****************/
+
+/* MIJN CODE */
+body {
+	margin: 0;
+}
+
+/* H2 NIET ZICHTBAAR, WEL TOEGANKELIJK */
+.visually-hidden {
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+}
+
+/* SECTION 1 */
+section:first-of-type {
+	height: fit-content;
+	padding-bottom: 4.5em;
+}
+
+section:first-of-type ul{
+	position:relative;
+	margin:0;
+	padding:0;
+	list-style:none;
+	width:auto;
+}
+
+section:first-of-type ul:first-of-type li p,a{
+	font-size: 1em;
+	display: inline-block;
+}
+
+section:first-of-type ul:first-of-type li a{
+	color: var(--color-text);
+	text-decoration: underline;
+}
+
+section:first-of-type ul:first-of-type li a:hover{
+	color: var(--color-text-blue);
+	text-decoration: none;
+}
+
+section:first-of-type ul:first-of-type li h2{
+	font-size: 1.5em;
+}
+
+section:first-of-type ul li{
+	font-family: Helvetica, sans-serif;
+	font-size: 1em;
+	text-align:center;
+	background-color: var(--color-background-grey);
+	--items: 3;
+	width:100%;
+	padding:1em;
+	
+	animation-name:caro;
+	animation-duration:3s;
+	animation-iteration-count:infinite;
+	animation-timing-function:linear;
+}
+
+/* TWEEDE EN DERDE LI */
+section:first-of-type li:nth-of-type(n + 2) {
+	position:absolute;
+	top:0;
+}
+
+@keyframes caro {
+	0%, 33.3% {
+		opacity:1;
+	}
+	33.31%, 100% {
+		opacity:0;
+	}
+}
+
+section:first-of-type li:nth-of-type(2) {
+	animation-delay:-2s;
+} 
+
+section:first-of-type li:nth-of-type(3) {
+	animation-delay:-1s;
+} 
+
+/* SECTION 2 */
+section:nth-of-type(2) img {
+	width: 26em;
+	height: 35em;
+	object-fit: none;
+}
+
+section:nth-of-type(2) h1 {
+	font-family: Nike Futura;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 3em;
+}
+
+section:nth-of-type(2) p {
+	font-family: Helvetica;
+	text-align: center;
+}
+
+section:nth-of-type(2) button {
+	font-family: Helvetica;
+	font-size: 1em;
+	background-color: var(--color-background-black);
+	color: var(--color-text-white);
+	border-radius: 2em;
+	border: none;
+	padding: .5em 1em .5em 1em;
+	display: flex;
+	margin: auto;
+}
+
+/* BUTTON HOVER STATE */
+section:nth-of-type(2) button:hover {
+	font-family: Helvetica;
+	font-size: 1em;
+	background-color: var(--color-background-white);
+	color: var(--color-text);
+	border-radius: 2em;
+	border: 0.2em solid var(--color-text);
+	text-align: center;
+	padding: .5em 1em .5em 1em;
+	display: flex;
+	margin: auto;
+}
+
+/* CAROUSSEL 1 */
+section:nth-of-type(3) ul:first-of-type {
+	list-style-type: none;
+	display: flex;
+	overflow-x: auto;
+	gap: 1em;
+	scroll-snap-type: x mandatory;
+	overscroll-behavior-x: contain;
+}
+
+section:nth-of-type(3) ul:first-of-type li {
+	flex-shrink: 0;
+	flex-basis: 100%;
+	display: flex;
+	flex-direction: column;
+	scroll-snap-align: center;
+}
+
+section:nth-of-type(3) ul:first-of-type p {
+	font-family: Helvetica, sans-serif;
+	font-weight: 500;
+	font-size: 1.5em;
+	padding-left: 1em;
+}
+
+/* SECTION 4 CAROUSSEL 2 */
+section:nth-of-type(4) h2 {
+	font-size: 2em;
+	font-family: helvetica, sans-serif;
+	padding-left: 1em;
+}
+
+section:nth-of-type(4) ul:first-of-type {
+	list-style-type: none;
+	display: flex;
+	overflow-x: auto;
+	gap: 1em;
+	scroll-snap-type: x mandatory;
+	overscroll-behavior-x: contain;
+}
+
+section:nth-of-type(4) ul:first-of-type li {
+	flex-shrink: 0;
+	flex-basis: 100%;
+	display: flex;
+	flex-direction: column;
+	scroll-snap-align: center;
+}
+
+/* STYLING TEKST ONDER AFBEELDING CAROUSSEL 2 */
+section:nth-of-type(4) ul:first-of-type li h4 {
+	font-family: Helvetica, sans-serif;
+	font-size: 1.2em;
+	font-weight: bold;
+	margin-bottom: 0;
+}
+
+section:nth-of-type(4) ul:first-of-type li h5 {
+	color: var(--color-text-grey);
+	font-family: Helvetica, sans-serif;
+	font-size: 1em;
+	font-weight: 100;
+	margin-bottom: 0;
+	margin-top: 0;
+}
+
+section:nth-of-type(4) ul:first-of-type li h3 {
+	font-family: Helvetica, sans-serif;
+	font-size: 1em;
+	font-weight: bold;
+	margin-bottom: 1;
+	margin-top: 0;
+}
+
+/* SECTION 4 ONTDEK MEER */
+section:nth-of-type(5) h2{
+	font-size: 2em;
+	font-family: helvetica, sans-serif;
+	padding-left: 1em;
+}
+
+section:nth-of-type(5) ul{
+	list-style-type: none;
+}
+
+section:nth-of-type(5) ul:first-of-type li button:first-of-type{
+	padding: .5em;
+	border: none;
+	border-radius: 1.5em;
+	width: 70%;
+	background-color: var(--color-background-white);
+}
+
+section:nth-of-type(5) ul:first-of-type li button:hover{
+	padding: .5em;
+	border: 0.2em solid var(--color-background-white);
+	border-radius: 1.5em;
+	width: 90%;
+	color: var(--color-text-white);
+	background-color: var(--color-background-black);
+}
+
+section:nth-of-type(5) ul:first-of-type li button:nth-of-type(2){
+	padding: .5em;
+	padding-right: 1em;
+	padding-bottom: 1em;
+	border: none;
+	border-radius: 1.5em;
+	background-color: var(--color-background-white);
+}
+
+section:nth-of-type(5) ul:first-of-type li button:nth-of-type(2):hover{
+	padding: .5em;
+	padding-right: 1em;
+	padding-bottom: 1em;
+	border: none;
+	border-radius: 1.5em;
+	width: 120%;
+	border: .2em solid var(--color-background-white);
+	color: var(--color-text-white);
+	background-color: var(--color-background-black);
+}
+
+section:nth-of-type(5) ul:first-of-type li:first-of-type img:first-of-type{
+	padding-left: 1em;
+}
+
+section:nth-of-type(5) img {
+	max-width:100%;
+}
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+section:nth-of-type(5) {
+	position:relative;
+}
+
+section:nth-of-type(5) ul {
+	padding:0;
+	list-style:none;
+	margin:0;
+	
+	display:flex;
+	overflow:auto;
+	gap:1em;
+	
+	scroll-snap-type:x mandatory;
+	overscroll-behavior-x:contain;
+}
+
+section:nth-of-type(5) ul li {
+	scroll-snap-align:center;
+	
+	flex-basis:75%;
+	max-width:32em;
+	flex-shrink:0;
+	
+	position:relative;
+}
+
+section:nth-of-type(5) ul li div {
+	position:absolute;
+	left:1em;
+	bottom:1em;
+	
+	display:flex;
+	flex-direction:column;
+	gap:1em;
+	padding:1em;
+}
+
+/* DARK MODE */
+@media (prefers-color-scheme: dark) {
+	header nav:first-of-type {
+		background-color: var(--color-background-black);
+	}
+	
+	header nav:first-of-type > a:first-of-type svg:first-of-type {
+		color: var(--color-background-white);
+	}
+
+	header nav:first-of-type ul:first-of-type li a svg {
+		color: var(--color-background-white);
+	}
+
+	body {
+		color: var(--color-text-white);
+		background-color: var(--color-background-black);
+	}
+
+	section:first-of-type ul li {
+		color: var(--color-text-white);
+		background-color: var(--color-background-black);
+	}
+
+	section:nth-of-type(2) button {
+		color: var(--color-text);
+		background-color: var(--color-background-white);
+	}
+
+	section:nth-of-type(4) ul:first-of-type li h5{
+		color: var(--color-text-white);
+	}
+}

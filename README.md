@@ -255,7 +255,9 @@ Liam:
 </details>
 
 
-
+Eindgesprek herkansing samenvatting:
+Heel veel dingen heb ik kunnen oplossen: Ik heb mijn html gevalideerd en de fouten verbeterd. Ik heb drie css bestanden, aria labels toegevoegd en mijn hamburger menu gefixt. Overal alt attributen. states toegevoegd. Dark mode toegevoegd.
+het enige wat niet gelukt is: ik heb het niet helemaal toegankelijk kunnen maken helaas.
 
 
 ## Bronnenlijst
@@ -268,7 +270,7 @@ Liam:
   Nb. Vermeld de bronnen ook in je code.
 
   1. caroussels: code van de les sanne
-  2. javascript: donna en sarah
+  2. javascript: donna en liam micro interactie
   3. tekst die telkens veranderd in de 1e section: sanne
   4. fontface code van de les sanne
 

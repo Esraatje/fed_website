@@ -1,0 +1,221 @@
+/**************/
+/* CSS REMEDY */
+/**************/
+*, *::after, *::before {
+  box-sizing:border-box;  
+}
+
+/*********************/
+/* CUSTOM PROPERTIES */
+/*********************/
+:root {
+	/* startje */
+	--color-text:#111;
+	--color-text-white:#fff;
+	--color-text-grey:#707072;
+	--color-text-blue: #1F51FF;
+	--color-text-purple: #5D3FD3;
+	--color-text-red: #A62F24;
+	--color-background-white:#fff;
+	--color-background-black:#111;
+	--color-background-grey:#f5f5f5;
+	--color-background-darkgrey: #7e7e7e;
+}
+
+/* FONTS */
+@font-face {
+	font-family: Nike Futura;
+	src: url(https://www.nike.com/static/ncss/4.2/dotcom/fonts/Nike-Futura.woff2);
+	format: ('woff2');
+}
+
+@font-face {
+	font-family: Helvetica;
+	src: url(https://www.nike.com/static/ncss/4.2/dotcom/fonts/HelveticaNowDisplayMedium.woff2);
+	format: ('woff2');
+}
+
+@font-face {
+	font-family: Nike-TG;
+	src: url(https://www.nike.com/static/ncss/4.2/dotcom/fonts/Nike-TG.woff2);
+	format: ('woff2');
+}
+
+/****************/
+/* JOUW STYLING */
+/****************/
+
+/* MIJN CODE */
+body {
+	margin: 0;
+}
+
+/* H2 NIET ZICHTBAAR, WEL TOEGANKELIJK */
+.visually-hidden {
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+}
+
+/* SECTION 1 */
+section:first-of-type {
+	height: fit-content;
+	padding-bottom: 4.5em;
+}
+
+section:first-of-type ul{
+	position:relative;
+	margin:0;
+	padding:0;
+	list-style:none;
+	width:auto;
+}
+
+section:first-of-type ul:first-of-type li p,a{
+	font-size: 1em;
+	display: inline-block;
+}
+
+section:first-of-type ul:first-of-type li a{
+	color: var(--color-text);
+	text-decoration: underline;
+}
+
+section:first-of-type ul:first-of-type li a:hover{
+	color: var(--color-text-blue);
+	text-decoration: none;
+}
+
+section:first-of-type ul:first-of-type li h2{
+	font-size: 1.5em;
+}
+
+section:first-of-type ul li{
+	font-family: Helvetica, sans-serif;
+	font-size: 1em;
+	text-align:center;
+	background-color: var(--color-background-grey);
+	--items: 3;
+	width:100%;
+	padding:1em;
+	
+	animation-name:caro;
+	animation-duration:3s;
+	animation-iteration-count:infinite;
+	animation-timing-function:linear;
+}
+
+/* TWEEDE EN DERDE LI */
+section:first-of-type li:nth-of-type(n + 2) {
+	position:absolute;
+	top:0;
+}
+
+@keyframes caro {
+	0%, 33.3% {
+		opacity:1;
+	}
+	33.31%, 100% {
+		opacity:0;
+	}
+}
+
+section:first-of-type li:nth-of-type(2) {
+	animation-delay:-2s;
+} 
+
+section:first-of-type li:nth-of-type(3) {
+	animation-delay:-1s;
+} 
+
+/* SECTION 2 */
+section:nth-of-type(2) ul:first-of-type {
+	display: flex;
+	list-style: none;
+	flex-wrap: wrap;
+	padding: 0;
+}
+
+section:nth-of-type(2) ul:first-of-type li {
+	margin: 1em;
+	width: 33%;
+	gap: 1em;
+}
+
+h4 {
+	color: var(--color-text-red);
+	font-family: Helvetica, sans-serif;
+	font-size: 0.88em;
+	margin: 0;
+}
+
+h5 {
+	font-family: Helvetica, sans-serif;
+	font-size: 0.88em;
+	margin: 0;
+}
+
+p {
+	color: var(--color-text-grey);
+	font-family: Helvetica, sans-serif;
+	font-size: 0.88em;
+	margin: 0;
+}
+
+h3 {
+	font-family: Helvetica, sans-serif;
+	font-size: 0.88em;
+	margin: 0;
+}
+
+h2 {
+	font-family: Helvetica, sans-serif;
+	padding-left: 1em;
+}
+
+/* DARK MODE */
+@media (prefers-color-scheme: dark) {
+	header nav:first-of-type {
+		background-color: var(--color-background-black);
+	}
+	
+	header nav:first-of-type > a:first-of-type svg:first-of-type {
+		color: var(--color-background-white);
+	}
+
+	header nav:first-of-type ul:first-of-type li a svg {
+		color: var(--color-background-white);
+	}
+
+	body {
+		color: var(--color-text-white);
+		background-color: var(--color-background-black);
+	}
+
+	section:first-of-type ul li {
+		color: var(--color-text-white);
+		background-color: var(--color-background-black);
+	}
+
+	section:first-of-type ul li a {
+		color: var(--color-text-white);
+	}
+
+	section:nth-of-type(2) button {
+		color: var(--color-text);
+		background-color: var(--color-background-white);
+	}
+
+	section:nth-of-type(4) ul:first-of-type li h5{
+		color: var(--color-text-white);
+	}
+
+	h4, p {
+		color: var(--color-text-white);
+	}
+}
+
