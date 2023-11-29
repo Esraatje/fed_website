@@ -255,10 +255,21 @@ Liam:
 </details>
 
 
-Eindgesprek herkansing samenvatting:
+Aanpassingen herkansing samenvatting:
 Heel veel dingen heb ik kunnen oplossen: Ik heb mijn html gevalideerd en de fouten verbeterd. Ik heb drie css bestanden, aria labels toegevoegd en mijn hamburger menu gefixt. Overal alt attributen. states toegevoegd. Dark mode toegevoegd.
 het enige wat niet gelukt is: ik heb het niet helemaal toegankelijk kunnen maken helaas.
 
+Eindgesprek herkansing samenvatting:
+Bij het vorige eindgesprek hebben we besproken dat ik de volgende punten nog ga aanpassen:
+- Prefers reduced motion toevoegen;
+- Skip links toevoegen;
+- H3, H4, alle koppen en subkoppen beter gebruiken;
+- Alle overeenkomende css voor beide pagina's in een stylesheet zetten;
+- Alle afbeeldingen een width van 100% geven om het mee te kunnen schalen;
+- Quotes om de fonts heen zetten;
+- Van de drie footers één footer maken en ul gebruiken bij ieder stukje;
+- De lay-out van de tweede pagina verbeteren, responsive maken;
+- De nav verbeteren, responsive maken.
 
 ## Bronnenlijst
 
@@ -273,5 +284,7 @@ het enige wat niet gelukt is: ik heb het niet helemaal toegankelijk kunnen maken
   2. javascript: donna en liam micro interactie
   3. tekst die telkens veranderd in de 1e section: sanne
   4. fontface code van de les sanne
+  5. voor de skip links en voor de reduced motion heb ik chatgpt gebruikt, ik kan de code een beetje uitleggen
+  6. voor de lay-out van de tweede pagina heb ik ook chatgpt gebrukt. ook deze code kan ik deels zelf uitleggen
 
 </details>

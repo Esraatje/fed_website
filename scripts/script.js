@@ -26,11 +26,3 @@ function sluitMenu() {
  
 knopOpen.addEventListener('click', openMenu);
 knopDicht.addEventListener('click', sluitMenu);
-
-// DARK MODE
-darkmodeHeader.addEventListener('toggle', dark-mode);
-
-function myFunction() {
-   var element = document.body;
-   element.classList.toggle("dark-mode");
-}
